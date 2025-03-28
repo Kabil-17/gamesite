@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -172,15 +174,16 @@ a:hover {
 
 }
 
-.cards img {
+.cards div{
     padding: 25px 25px;
-    height: 95px;
-    width: 95px;
     background-color: var(--first-color);
     border-radius: 50%;
+    height: 95px;
+    width: 95px;
     margin-bottom: 20px;
 }
-.cardname{
+
+    .cardname{
     font-family: var(--font-fam);
     font-size: 17px;
     font-weight:700;
@@ -201,17 +204,19 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
 }
+.all-games .bt-all{
+    height: fit-content;
+}
 .game-gal{
     background-color: rgba(0, 0, 0, 0.141);
     height: 330px;
-    width: 330px;
     border-radius: 20px;
     position: relative;
 
 }
 .game-gal img{
     border-radius: 20px;
-    width: 320px;
+    width: 100%;
 }
 .game-price{
     color: var(--third-color);
@@ -219,8 +224,8 @@ a:hover {
     padding: 5px 13px;
     width: fit-content;
     position: absolute;
-    bottom: 240px;
-    left: 240px;
+    bottom: 245px;
+    left: 195px;
     border-radius: 20px;
     font-size: 20px;
     font-weight: 600;
@@ -240,8 +245,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     padding: 0px 35px;
-    position: relative;
-    bottom: 32px;
+  
     
 }
 .in-game h4{
@@ -251,7 +255,24 @@ a:hover {
 .in-game i{
     color: var(--third-color);
     padding: 20px;
-    /* background-color: var(--second-color);
-    border-radius: 100%; */
+    height: fit-content;
+    background-color: var(--second-color);
+    border-radius: 100%;
+}
+
+@media(min-width:576px) and (max-width:786px){
+    .infra{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 300xp;
+    }
+    .view-game{
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+@media(min-width:789px) and (max-width:1199px){
+    .cards{
+
+    }
 }
 
