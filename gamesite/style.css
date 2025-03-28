@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
+
+* {
     box-sizing: border-box;
 }
-:root{
-    --first-color:#0071f8;
-    --second-color:#EE626B;
-    --third-color:#ffffff;
-    --font-fam:"Poppins", sans-serif;
+
+:root {
+    --first-color: #0071f8;
+    --second-color: #EE626B;
+    --third-color: #ffffff;
+    --font-fam: "Poppins", sans-serif;
 }
-body{
-    /* background-color: var(--first-color); */
-}
-.navbar{
+
+.navbar {
     background: var(--first-color);
     display: flex;
     justify-content: space-between;
@@ -21,14 +19,16 @@ body{
     align-items: center;
     font-family: var(--font-fam);
     font-weight: 300;
-    
+
 }
-.navlinks{
+
+.navlinks {
     display: flex;
     gap: 22.5px;
-   
+
 }
-.navlinks a{
+
+.navlinks a {
     text-decoration: none;
     padding: 8px 18px;
     border-radius: 50px;
@@ -38,54 +38,65 @@ body{
 
 }
 
-.bt-all{
+.bt-all {
     padding: 12px;
     width: 100px;
     border-radius: 50px;
     border: none;
-    background-color:var(--second-color);
+    background-color: var(--second-color);
     color: var(--third-color);
     font-weight: 700;
 }
-.navlinks .bt-all{
+
+.navlinks .bt-all {
     width: 100px;
 }
+
 a:hover {
     background-color: rgba(255, 255, 255, 0.185);
 }
-.hero{
+
+.hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: var(--third-color);
     font-family: var(--font-fam);
     padding: 90px 118px;
-    justify-content:space-between;
+    justify-content: space-between;
     gap: 100px;
     background-color: var(--first-color);
     padding-bottom: 200px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+
 }
-.content{
+
+.content {
     padding-top: 5px;
 }
-.content h3{
+
+.content h3 {
     font-size: 20.5px;
     font-weight: 400;
     padding-bottom: 2px;
 }
-.content .fi-li{
+
+.content .fi-li {
     font-size: 48px;
     font-weight: bold;
     line-height: 57.6px;
     padding-top: 15px;
 
 }
-.content .se-li{
+
+.content .se-li {
     font-size: 14px;
     line-height: 28px;
     padding-top: 46px;
     padding-bottom: 70px;
 }
-.search input{
+
+.search input {
     height: 50px;
     width: 350px;
     border-radius: 50px;
@@ -93,37 +104,42 @@ a:hover {
     padding: 1px 20px;
 }
 
-.search{
+.search {
     position: relative;
 }
-.search .bt-all{
+
+.search .bt-all {
     position: absolute;
     width: 150px;
     height: 50px;
     left: 312px;
 }
-.hero-img{
+
+.hero-img {
     position: relative;
 }
-.hero-img img{
+
+.hero-img img {
     height: 436px;
     width: 355px;
     border-radius: 25px;
     margin-left: 152px;
-    
+
 }
-.hero-img .price{
+
+.hero-img .price {
     background-color: var(--first-color);
     padding: 5px 13px;
     width: fit-content;
     position: absolute;
-    top:20px;
+    top: 20px;
     left: 410px;
     border-radius: 20px;
     font-size: 24px;
     font-weight: 700;
 }
-.hero-img .off{
+
+.hero-img .off {
     background-color: var(--second-color);
     padding: 30px 15px;
     width: fit-content;
@@ -134,27 +150,108 @@ a:hover {
     top: 360px;
     left: 120px;
 }
-.infra{
+
+.infra {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 20px 118px;
-    
+
 }
-.cards{
-    height: 205px;
-    width: 261px;
+
+.cards {
+    height: 215px;
+    width: 299px;
     border-radius: 25px;
-    background-color: #0071f8;
+    background-color: var(--third-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: ;
+    align-items: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.095);position: relative;
+    bottom: 100px;
+
 }
-.cards img{
-    padding: 30px 30px;
-    height: 120px;
-    width: 120px;
-    background-color: var(--second-color);
-    border: 1px solid rgb(22, 4, 4);
+
+.cards img {
+    padding: 25px 25px;
+    height: 95px;
+    width: 95px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.cardname{
+    font-family: var(--font-fam);
+    font-size: 17px;
+    font-weight:700;
+}
+.games{
+    padding: 10px 118px;
+    font-family: var(--font-fam);
+}
+.games h5{
+    color: var(--second-color);
+}
+.all-games{
+    display: flex;
+    justify-content: space-between;
+}
+.view-game{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.game-gal{
+    background-color: rgba(0, 0, 0, 0.141);
+    height: 330px;
+    width: 330px;
+    border-radius: 20px;
+    position: relative;
+
+}
+.game-gal img{
+    border-radius: 20px;
+    width: 320px;
+}
+.game-price{
+    color: var(--third-color);
+    background-color: var(--first-color);
+    padding: 5px 13px;
+    width: fit-content;
+    position: absolute;
+    bottom: 240px;
+    left: 240px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.game-price #off{
+    font-size: 16px;
+    text-decoration: line-through;
+    font-weight: 300;
+}
+.game-gal p{
+    padding: 0px 35px;
+    font-size: 15px;
+    opacity: 0.5;
+}
+.in-game{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 35px;
+    position: relative;
+    bottom: 32px;
     
+}
+.in-game h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+.in-game i{
+    color: var(--third-color);
+    padding: 20px;
+    /* background-color: var(--second-color);
+    border-radius: 100%; */
 }
 
